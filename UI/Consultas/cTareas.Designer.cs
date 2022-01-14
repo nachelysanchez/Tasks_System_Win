@@ -79,11 +79,14 @@ namespace Tasks_System_Win.UI.Consultas
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(410, 27);
+            this.BuscarButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_google_web_search_24;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BuscarButton.Location = new System.Drawing.Point(410, 21);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarButton.Size = new System.Drawing.Size(75, 33);
             this.BuscarButton.TabIndex = 4;
             this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
