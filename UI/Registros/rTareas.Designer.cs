@@ -70,35 +70,45 @@ namespace Tasks_System_Win.UI.Registros
             this.groupBox1.Size = new System.Drawing.Size(406, 353);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_eliminar_16;
+            this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.Location = new System.Drawing.Point(271, 301);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(96, 38);
             this.EliminarButton.TabIndex = 9;
             this.EliminarButton.Text = "Eliminar";
+            this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarButton.UseVisualStyleBackColor = true;
             this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // GuardarButton
             // 
+            this.GuardarButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.GuardarButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_guardar_48;
+            this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.Location = new System.Drawing.Point(148, 301);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(96, 38);
             this.GuardarButton.TabIndex = 8;
             this.GuardarButton.Text = "Guardar";
+            this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.GuardarButton.UseVisualStyleBackColor = true;
             this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // NuevoButton
             // 
+            this.NuevoButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.NuevoButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_nuevo_48;
+            this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.NuevoButton.Location = new System.Drawing.Point(24, 301);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(96, 38);
             this.NuevoButton.TabIndex = 7;
             this.NuevoButton.Text = "Nuevo";
+            this.NuevoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
@@ -139,11 +149,14 @@ namespace Tasks_System_Win.UI.Registros
             // 
             // BuscarButton
             // 
-            this.BuscarButton.Location = new System.Drawing.Point(148, 51);
+            this.BuscarButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_google_web_search_24;
+            this.BuscarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BuscarButton.Location = new System.Drawing.Point(148, 47);
             this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(75, 23);
+            this.BuscarButton.Size = new System.Drawing.Size(75, 28);
             this.BuscarButton.TabIndex = 2;
             this.BuscarButton.Text = "Buscar";
+            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
