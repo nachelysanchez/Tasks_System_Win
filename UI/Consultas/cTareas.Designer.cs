@@ -34,12 +34,9 @@ namespace Tasks_System_Win.UI.Consultas
             this.Label2 = new System.Windows.Forms.Label();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.BuscarButton = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TareaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.DataGridDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // FiltroComboBox
@@ -90,55 +87,30 @@ namespace Tasks_System_Win.UI.Consultas
             this.BuscarButton.UseVisualStyleBackColor = true;
             this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 77);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(489, 271);
-            this.dataGridView1.TabIndex = 5;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 50;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Descripción";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 250;
-            // 
             // TareaID
             // 
             this.TareaID.HeaderText = "Tarea Id";
             this.TareaID.Name = "TareaID";
             this.TareaID.ReadOnly = true;
             // 
+            // DataGridDatos
+            // 
+            this.DataGridDatos.AllowUserToAddRows = false;
+            this.DataGridDatos.AllowUserToDeleteRows = false;
+            this.DataGridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridDatos.Location = new System.Drawing.Point(12, 77);
+            this.DataGridDatos.Name = "DataGridDatos";
+            this.DataGridDatos.ReadOnly = true;
+            this.DataGridDatos.RowTemplate.Height = 25;
+            this.DataGridDatos.Size = new System.Drawing.Size(473, 150);
+            this.DataGridDatos.TabIndex = 5;
+            // 
             // cTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(513, 270);
+            this.Controls.Add(this.DataGridDatos);
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.Label2);
@@ -146,7 +118,7 @@ namespace Tasks_System_Win.UI.Consultas
             this.Controls.Add(this.FiltroComboBox);
             this.Name = "cTareas";
             this.Text = "cTareas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,10 +131,7 @@ namespace Tasks_System_Win.UI.Consultas
         private System.Windows.Forms.Label Label2;
         private System.Windows.Forms.TextBox CriterioTextBox;
         private System.Windows.Forms.Button BuscarButton;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn TareaID;
+        private System.Windows.Forms.DataGridView DataGridDatos;
     }
 }

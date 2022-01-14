@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tasks_System_Win.UI.Consultas;
 using Tasks_System_Win.UI.Registros;
 
 namespace Tasks_System_Win
@@ -25,7 +26,8 @@ namespace Tasks_System_Win
 
         private void consultaDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            cTareas tarea = new cTareas();
+            tarea.Show();
         }
     }
 }

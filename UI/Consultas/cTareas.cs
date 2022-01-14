@@ -47,8 +47,8 @@ namespace Tasks_System_Win.UI.Consultas
             {
                 listado = TareasBLL.GetList(t => true);
             }
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = listado;
+            DataGridDatos.DataSource = null;
+            DataGridDatos.DataSource = listado;
         }
     }
 }
