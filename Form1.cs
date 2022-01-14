@@ -21,5 +21,15 @@ namespace Tasks_System_Win
         {
 
         }
+
+        private void registroDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void consultaDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

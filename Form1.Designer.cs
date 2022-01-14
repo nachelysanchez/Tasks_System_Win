@@ -29,62 +29,80 @@ namespace Tasks_System_Win
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Tarea = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
+            this.Menu = new System.Windows.Forms.MenuStrip();
+            this.registrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaDeTareasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // Menu
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.Tarea);
-            this.groupBox1.Location = new System.Drawing.Point(12, 22);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(432, 388);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.Menu.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrosToolStripMenuItem,
+            this.consultasToolStripMenuItem});
+            this.Menu.Location = new System.Drawing.Point(0, 0);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(347, 24);
+            this.Menu.TabIndex = 1;
+            this.Menu.Text = "menuStrip1";
             // 
-            // Tarea
+            // registrosToolStripMenuItem
             // 
-            this.Tarea.AutoSize = true;
-            this.Tarea.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.Tarea.Location = new System.Drawing.Point(17, 23);
-            this.Tarea.Name = "Tarea";
-            this.Tarea.Size = new System.Drawing.Size(70, 21);
-            this.Tarea.TabIndex = 0;
-            this.Tarea.Text = "Tarea Id";
+            this.registrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroDeTareasToolStripMenuItem});
+            this.registrosToolStripMenuItem.Name = "registrosToolStripMenuItem";
+            this.registrosToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
+            this.registrosToolStripMenuItem.Text = "Registros";
             // 
-            // textBox1
+            // consultasToolStripMenuItem
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(93, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 27);
-            this.textBox1.TabIndex = 1;
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultaDeTareasToolStripMenuItem});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // registroDeTareasToolStripMenuItem
+            // 
+            this.registroDeTareasToolStripMenuItem.Name = "registroDeTareasToolStripMenuItem";
+            this.registroDeTareasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroDeTareasToolStripMenuItem.Text = "Registro de Tareas";
+            this.registroDeTareasToolStripMenuItem.Click += new System.EventHandler(this.registroDeTareasToolStripMenuItem_Click);
+            // 
+            // consultaDeTareasToolStripMenuItem
+            // 
+            this.consultaDeTareasToolStripMenuItem.Name = "consultaDeTareasToolStripMenuItem";
+            this.consultaDeTareasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaDeTareasToolStripMenuItem.Text = "Consulta de Tareas";
+            this.consultaDeTareasToolStripMenuItem.Click += new System.EventHandler(this.consultaDeTareasToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.groupBox1);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(347, 244);
+            this.Controls.Add(this.Menu);
+            this.MainMenuStrip = this.Menu;
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Text = "Ventana Principal";
+            this.Menu.ResumeLayout(false);
+            this.Menu.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label Tarea;
+        private System.Windows.Forms.MenuStrip Menu;
+        private System.Windows.Forms.ToolStripMenuItem registrosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeTareasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaDeTareasToolStripMenuItem;
     }
 }
 
