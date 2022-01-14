@@ -73,6 +73,7 @@ namespace Tasks_System_Win.UI.Registros
             // 
             // EliminarButton
             // 
+            this.EliminarButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.EliminarButton.Image = global::Tasks_System_Win.Properties.Resources.icons8_eliminar_16;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EliminarButton.Location = new System.Drawing.Point(271, 301);
