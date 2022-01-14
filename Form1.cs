@@ -17,5 +17,9 @@ namespace Tasks_System_Win
             InitializeComponent();
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
