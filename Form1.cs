@@ -16,12 +16,6 @@ namespace Tasks_System_Win
         {
             InitializeComponent();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void registroDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
