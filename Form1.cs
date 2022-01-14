@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tasks_System_Win.UI.Registros;
 
 namespace Tasks_System_Win
 {
@@ -18,7 +19,8 @@ namespace Tasks_System_Win
         }
         private void registroDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            rTareas tareas = new rTareas();
+            tareas.Show();
         }
 
         private void consultaDeTareasToolStripMenuItem_Click(object sender, EventArgs e)
